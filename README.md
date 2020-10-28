@@ -300,3 +300,16 @@ console.log(`私の名前は ${name} です. ${age} 歳です. ${gender} です`
 // 私の名前は John Doe です. 14 歳です. female です
 ```
 
+## 分割代入
+分割代入を使えば、中間の変数を省略して、欲しいものだけを取得することができる。
+```javascript
+// OLD STYLE
+var path = require('path')
+var readFileSync = require('fs').readFileSync
+var writeFileSync = require('fs').writeFileSync
+```
+```javascript
+// BETTER WAY
+const { join } = require('path')
+import { readFilesync, writeFileSync } from 'fs'
+```
