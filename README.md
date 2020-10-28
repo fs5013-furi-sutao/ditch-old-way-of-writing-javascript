@@ -25,7 +25,7 @@ const name = 'yamamoto'
 const arr = []
 arr.push(1)
 arr.push(2)
-console.log(arr) // [1, 2]
+console.log(arr) // -> [1, 2]
 ```
 
 再代入可能な 変数を宣言する時は let を使用する。
@@ -33,7 +33,7 @@ console.log(arr) // [1, 2]
 ```javascript
 let name = 'yamamoto'
 name = '再代入 OK'
-console.log(name) // 再代入 OK
+console.log(name) // -> 再代入 OK
 ```
 
 ## 変数のスコープ
@@ -51,7 +51,7 @@ console.log(i) // -> 10
 for (let i = 0; i < 10; i++) {
   console.log(i) // -> 0, 1, 2, 3...
 }
-console.log(i) // -VM47:4 Uncaught ReferenceError: i is not defined
+console.log(i) // Uncaught ReferenceError: i is not defined
 ```
 
 ## 文字列の結合
