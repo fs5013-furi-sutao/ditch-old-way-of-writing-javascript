@@ -1,4 +1,4 @@
-# 古くなった JavaScript の書き方、これからの JavaScript の書き方まとめ
+# 古くなった JavaScript の書き方、これからの書き方
 
 ## 変数・リテラル
 
