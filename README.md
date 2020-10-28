@@ -116,7 +116,7 @@ Dog.prototype.sayMyName = function () {
 }
 
 var chiwawa = new Dog()
-chiwawa.sayMyName() // chiwawa
+chiwawa.sayMyName() // -> chiwawa
 ```
 
 ES6(ES2015) 以降のクラスを使うと以下の通り。
@@ -239,7 +239,7 @@ function f(a, b, c) {
     console.log(a, b, c);
 }
 
-f.apply(null, [1, 2, 3]);  // 1 2 3
+f.apply(null, [1, 2, 3]);  // -> 1 2 3
 ```
 
 今は配列展開するスプレッド演算子を使えば同じことができる。
@@ -249,7 +249,7 @@ const f = (a, b, c) => {
     console.log(a, b,  c)
 }
 
-f(...[1, 2, 3])  // 1, 2, 3
+f(...[1, 2, 3])  // -> 1, 2, 3
 ```
 関数の引数を可変長配列にしたい時は以下のように書ける。
 ```javascript
@@ -257,7 +257,7 @@ const f = (a, b, ...c) => {
     console.log(a, b, c)
 }
 
-f(1, 2, 3, 4, 5, 6)  // 1 2 [ 3, 4, 5, 6 ]
+f(1, 2, 3, 4, 5, 6)  // -> 1 2 [ 3, 4, 5, 6 ]
 ```
 
 ## デフォルト引数
@@ -286,7 +286,7 @@ const f = ({name='chiwawa', gender='female'}={}) => {
     console.log(name, gender)
 }
 
-f({ id: '11', gender: 'male'})  // chiwawa male
+f({ id: '11', gender: 'male'})  // -> chiwawa male
 ```
 次のように分割代入することもできる。
 ```javascript
@@ -297,7 +297,7 @@ const data = {
 
 const {name='John Doe', age='unknown', gender='male'} = data;
 console.log(`私の名前は ${name} です. ${age} 歳です. ${gender} です`);
-// 私の名前は John Doe です. 14 歳です. female です
+// -> 私の名前は John Doe です. 14 歳です. female です
 ```
 
 ## 分割代入
